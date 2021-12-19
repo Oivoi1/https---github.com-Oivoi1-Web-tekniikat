@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+div{
+    margin: 1rem;
+}
+
+.half{
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+.blue{
+    color: blue;
+}
+
+.blue{
+    color: pink;
+}
+
+h1, h2, h3, h4, h5, h6, .highlight{
+    color: red;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+#main-heading, h1 + p {
+    color: green;
+}
+
+h1 ~ p{
+    font-style: italic;
+}
+
+.purple{
+    color: purple;
+}
+
+div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[required]{
+    border: 2px solid black;
+}
+
+[class^="article"]{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+[class|="article" i]{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+input:focus{
+    border-color: lightblue;
+}
+
+p:hover{
+    font-size: 2rem;
+}
