@@ -1,0 +1,10 @@
+.color{
+    background-color: cyan;
+    height: 20px;
+    width: 150px;
+}
+
+.important{
+    font-weight: bold;
+    color: red;
+}

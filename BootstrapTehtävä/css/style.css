@@ -1,0 +1,52 @@
+body{
+    background-image: url(../images/system-g944de2b01_1920.jpg);
+    background-repeat: no-repeat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.carousel-item{
+    height: 20rem;
+    background-color: #777;
+    color: aqua;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom:50px;
+}
+
+.link{
+    text-decoration: none;
+    color: azure;
+}
+
+.link:hover{
+    color: azure;
+}
+
+.card{
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbar{
+    border:white solid 1px;
+}
+
+li{
+    text-align: start;
+    padding-left: 3rem;
+}
+
+body::before{
+    display: block;
+    content:"";
+    height: 70px;
+}
