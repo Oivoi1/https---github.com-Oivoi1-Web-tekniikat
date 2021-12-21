@@ -1,7 +1,10 @@
+body, html {
+    overflow-x: hidden;
+}
+
 body{
-    background-image: url(../images/system-g944de2b01_1920.jpg);
+    background-image: url(../images/TaustakuvaISO.jpg);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow-x:hidden;
 }
 
 li{

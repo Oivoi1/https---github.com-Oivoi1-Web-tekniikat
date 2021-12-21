@@ -1,5 +1,9 @@
+body, html {
+    overflow-x: hidden;
+}
+
 body{
-    background-image: url(../images/system-g944de2b01_1920.jpg);
+    background-image: url(../images/TaustakuvaISO.jpg);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 li{
@@ -10,16 +14,16 @@ li{
     border:white solid 1px;
 }
 
-span{
+.accordion-body{
+    background-color:cornsilk;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px;
+}
+
+.accordion-body>span{
     font-weight: bold;
 }
 
-.accordion-body{
-    background-color: whitesmoke;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 50px;
-    
-}
 body::before{
     display: block;
     content:"";
