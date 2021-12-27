@@ -10,6 +10,16 @@ li{
     text-align: start;
     padding-left: 3rem;
 }
+
+.link{
+    text-decoration: none;
+    color: azure;
+}
+
+.link:hover{
+    color: azure;
+}
+
 .navbar{
     border:white solid 1px;
 }

@@ -8,32 +8,41 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+<div id="content">
 <body>
     <header>
-        Header
+        <h1>forecast</h1>
     </header>
     <article>
-    <div class="boxes">
-        <div id="articleDiv1">
-            <p id="weatherInfo"></p>
-        </div>
-        <div id="articleDiv2">
-            <p id="weatherInfo"></p>
-        </div>
-        <div id="articleDiv3">
-            <p id="weatherInfo"></p>
-        </div>
-        <div id="articleDiv4">
-            <p id="weatherInfo"></p>
-        </div>
-        <div id="articleDiv5">
-            <p id="weatherInfo"></p>
-        </div>
-    </div>
+        Here you can find warmest and coldest of the places, and some in between
+        <select name="cities" id="list">Valitte kaupunki
+            <option id="oulu">Oulu</option>
+            <option id="paris">Paris</option>
+            <option id="tamatave">Tamatave</option>
+            <option id="jakutsk">Jakutsk</option>
+            <option id="utajärvi">Utajärvi</option>
+        </select>
+        <button id="cityButton" onclick="getWeather()">Get the city</button>
     </article>
+    <div id="articleDiv">
+        <p id="city">1</p>
+    </div>
+    <div id="articleDiv">
+        <p id="temperature">2</p>
+    </div>
+    <div id="articleDiv">
+        <p id="temperatureFeels">3</p>
+    </div>
+    <div id="articleDiv">
+        <p id="wind">4</p>
+    </div>
+    <div id="articleDiv">
+        <p id="icon">5</p>
+    </div>
     <footer>
         <span id="answer-image"></span>
     </footer>
+</div>
     <script src="Jotain.js"></script>
 </body>
 </html>
