@@ -1,15 +1,16 @@
+body, html {
+    overflow-x: hidden;
+}
+
 body{
     background-image: url(../images/TaustakuvaISO.jpg);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.carousel-item{
-    height: 20rem;
-    background-color: #777;
-    color: aqua;
-    position: relative;
-    background-position: center;
-    background-size: cover;
+body::before{
+    display: block;
+    content:"";
+    height: 70px;
 }
 
 .content{
@@ -44,8 +45,3 @@ li{
     padding-left: 3rem;
 }
 
-body::before{
-    display: block;
-    content:"";
-    height: 70px;
-}

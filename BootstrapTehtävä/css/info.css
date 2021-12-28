@@ -1,0 +1,28 @@
+body, html {
+    overflow-x: hidden;
+}
+
+
+body::before{
+    display: block;
+    content:"";
+    height: 70px;
+}
+
+.link{
+    text-decoration: none;
+    color: azure;
+}
+
+.link:hover{
+    color: azure;
+}
+
+.navbar{
+    border:white solid 1px;
+}
+
+li{
+    text-align: start;
+    padding-left: 3rem;
+}

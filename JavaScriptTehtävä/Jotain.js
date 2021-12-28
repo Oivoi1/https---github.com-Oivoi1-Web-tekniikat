@@ -9,7 +9,7 @@ function getWeather() {
         let tempature = weather.current.temp_c;
         let tempatureFeels = weather.current.feelslike_c;
         let wind =Math.floor(weather.current.wind_kph*0.28);
-        document.getElementById("city").innerHTML = "City: " + city + "<br>" + country
+        document.getElementById("city").innerHTML = "City: " + city + "," + "<br>" + country
         document.getElementById("temperature").innerHTML = "Temperature: " + tempature + "°C"
         document.getElementById("temperatureFeels").innerHTML = "feels like: " + tempatureFeels + "°C"
         document.getElementById("wind").innerHTML = "wind: " + wind + " m/s"
@@ -41,8 +41,16 @@ function getWeather() {
         xhttp.open("GET","http://api.weatherapi.com/v1/current.json?key=577191a56a1a41f2ab2152650211512&q=Utajarvi&aqi=no",true);
         // Send request
         xhttp.send();
+
+        
+    }
+      let condition = document.querySelector("span")
+
+    if(tempature<-25){
+        condition.innerText = "YEEYEYAE"
     }
 }
+
 
 
 

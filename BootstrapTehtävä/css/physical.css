@@ -6,6 +6,14 @@ body{
     background-image: url(../images/TaustakuvaISO.jpg);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+body::before{
+    display: block;
+    content:"";
+    height: 70px;
+}
+
+
 li{
     text-align: start;
     padding-left: 3rem;
@@ -34,8 +42,3 @@ li{
     font-weight: bold;
 }
 
-body::before{
-    display: block;
-    content:"";
-    height: 70px;
-}
