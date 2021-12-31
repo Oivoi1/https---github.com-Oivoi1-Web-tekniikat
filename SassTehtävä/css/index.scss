@@ -1,0 +1,109 @@
+$bg-color: rgba(255, 255, 255, 0.5);
+$secondary: rgb(112, 112, 112);
+$highlight-color:rgb(50, 200, 210);
+$font-stack: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$text-color: rgb(255, 255, 255);
+
+@mixin theme($theme: rgb(90, 77, 77)) {
+    background: $theme;
+    padding: 5px;
+    margin: 5px;
+    border: $secondary 2px outset;
+    color: black;
+    }
+    
+
+
+html {
+    overflow-x: hidden;
+body{
+    background-image: url(../images/TaustakuvaISO.jpg);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+}
+
+body::before{
+    display: block;
+    content:"";
+    height: 85px;
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom:50px;
+}
+
+.container{
+    font-family: $font-stack;
+}
+
+.link{
+    text-decoration: none;
+    color: $text-color;
+}
+
+.card{
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid $highlight-color;
+}
+
+.navbar{
+    border-bottom: 2px solid $highlight-color;
+}
+
+li{
+    text-align: start;
+    padding-left: 3rem;
+    @include theme;
+}
+
+footer{
+    font-weight: bold;
+    border-top: $highlight-color 2px solid;
+        div{
+        @include theme;
+    }
+}
+
+.accordion-body{
+    background-color:$secondary;
+    color: $text-color;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px;
+}
+
+.accordion-body>span{
+    font-weight: bold;
+}
+
+#carouselExampleControls>h1:hover{
+    font-weight:bold
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 80px;
+    width: 80px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.carousel-item{
+    background-size: auto;
+    background-color:$bg-color ;
+}
+
+@media screen and (max-width: 768px){
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+
+    height: 40px;
+    width: 40px;
+    }
+}
+

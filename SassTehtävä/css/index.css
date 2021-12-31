@@ -1,0 +1,101 @@
+html {
+  overflow-x: hidden;
+}
+
+html body {
+  background-image: url(../images/TaustakuvaISO.jpg);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 85px;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+.container {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #32c8d2;
+}
+
+.navbar {
+  border-bottom: 2px solid #32c8d2;
+}
+
+li {
+  text-align: start;
+  padding-left: 3rem;
+  background: #5a4d4d;
+  padding: 5px;
+  margin: 5px;
+  border: #707070 2px outset;
+  color: black;
+}
+
+footer {
+  font-weight: bold;
+  border-top: #32c8d2 2px solid;
+}
+
+footer div {
+  background: #5a4d4d;
+  padding: 5px;
+  margin: 5px;
+  border: #707070 2px outset;
+  color: black;
+}
+
+.accordion-body {
+  background-color: #707070;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 50px;
+}
+
+.accordion-body > span {
+  font-weight: bold;
+}
+
+#carouselExampleControls > h1:hover {
+  font-weight: bold;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 80px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.carousel-item {
+  background-size: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
