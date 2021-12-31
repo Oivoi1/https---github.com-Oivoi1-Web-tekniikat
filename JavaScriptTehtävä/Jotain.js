@@ -13,7 +13,7 @@ function getWeather() {
         document.getElementById("temperature").innerHTML = "Temperature: " + tempature + "°C"
         document.getElementById("temperatureFeels").innerHTML = "feels like: " + tempatureFeels + "°C"
         document.getElementById("wind").innerHTML = "wind: " + wind + " m/s"
-        document.getElementById("icon").setAttribute("src", weather.current.condition.icon)
+        document.getElementById("condition").innerHTML = current.condition;
         document.getElementById("weather").innerHTML = ""
 
         if(tempature<-25 && tempature<-16){
@@ -34,7 +34,7 @@ function getWeather() {
         if(tempature<5 && tempature>9){
             document.getElementById("weather").innerHTML = "It is " + tempature + "°C, "
         }
-        if(tempature>10 && tempature<14){
+        if(tempature>=10 && tempature<14){
             document.getElementById("weather").innerHTML = "It is " + tempature + "°C, you might need a jacket "
         }
         if(tempature>=15 && tempature<20){
